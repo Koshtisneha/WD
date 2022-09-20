@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>media</title>
+	<style type="text/css">
+		.main
+		{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.first
+		{
+			background-color: cyan;
+			width: 500px;
+			height: 300px;
+		}
+
+		.second
+		{
+			background-color: hotpink;
+			width: 500px;
+			height: 300px;
+		}
+		.third
+		{
+			background-color: green;
+			width: 500px;
+			height: 300px;
+		}
+		.four
+		{
+			background-color: red;
+			width: 500px;
+			height: 300px;
+		}
+
+
+			@media(max-width: 800px)
+		{
+			.first
+			{
+				background-color: yellow;
+			}
+		}
+		@media (min-width:500px) and (max-width: 600px)
+		{
+			.second
+			{
+				background-color: green;
+			}
+			.third
+			{
+				background-color: darkcyan;
+			}
+			.four
+			{
+				background-color: blue;
+				
+			}
+		}
+		
+			
+		
+	</style>
+</head>
+<body>
+	<div class="main">
+	<div class="first">First</div>
+	<div class="second">Second</div>
+	<div class="third">Third</div>
+	<div class="four">Four</div>
+	</div>
+</body>
+</html>
