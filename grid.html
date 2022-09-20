@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GRID</title>
+    <style type="text/css">
+        body
+        {
+            overflow-y: hidden;
+        }
+        .main
+        {
+            display: grid;
+            grid-template-columns: 200px 250px 250px 200px;
+            grid-template-rows:200px 150px 150px 200px;
+            grid-gap: 10px;
+            color: white;
+            margin: 150px;
+        }
+        .box1
+        {
+            background-color: coral;
+            grid-column: 1/2;
+            grid-row: 1/4;
+
+        }
+        .box2
+        {
+            background-color: indianred;
+            grid-row: 1/2;
+            grid-column: 2/4;
+        }
+        .box3
+        {
+            background-color: green;
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+        .box4
+        {
+            background-color: deeppink;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .box5
+        {
+            background-color: yellowgreen;
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .box6
+        {
+            background-color: orange;
+             grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .box7
+        {
+            background-color: darkcyan;
+             grid-column: 3/4;
+            grid-row: 3/4;
+        }
+        .box8
+        {
+            background-color: blue;
+            grid-row: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">BOX 1</div>
+        <div class="box2">BOX 2</div>
+        <div class="box3">BOX 3</div>
+        <div class="box4">BOX 4</div>
+        <div class="box5">BOX 5</div>
+        <div class="box6">BOX 6</div>
+        <div class="box7">BOX 7</div>
+        <div class="box8">BOX 8</div>
+    </div>
+
+</body>
+</html>
