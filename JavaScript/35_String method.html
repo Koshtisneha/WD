@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--    
+    1. length
+    2. toLowerCase 
+    3. to
+    4. includes
+    5. startWith
+    6. endWith
+    7. search
+    8. match
+    9. indexOf
+    10. lastIndexOf
+    11. replace 
+    12. chartAt
+    13. charCodeAt
+    14. concat
+    15. slice
+    16. substr
+    17. repeat
+    18. valueof
+    19. tostring
+ -->
+
+
+    
+
+    <script>
+
+        var x= "Welcome to Tops Technologies";
+        var z="Hello Everyone...!";
+
+
+        var y = x.length;
+        document.write(y + "<br><br>")
+
+        var y= x.toLowerCase();
+        document.write(y + "<br><br>")
+
+        var y= x.toUpperCase();
+        document.write(y + "<br><br>")
+
+        var y=x.includes("tops");
+        document.write(y + "<br><br>")
+
+        var y=x.startsWith("Welcome");
+        document.write(y + "<br><br>")
+
+        var y=x.endsWith("ise")
+        document.write(y + "<br><br>")
+
+        var y=x.search("Tech")
+        document.write(y + "<br><br>")
+
+        var y=x.match(/to/g);
+        document.write(y + "<br><br>")
+
+        var y=x.indexOf("Technologies");
+        document.write(y + "<br><br>")
+
+        var y=x.lastIndexOf("to");
+        document.write(y + "<br><br>")
+
+        var y=x.replace("Tops","TOPS");
+        document.write(y + "<br><br>")
+
+        var y=x.replace(/Tops/g,"Welcome")
+        document.write(y + "<br><br>")
+        
+
+        var y=x.charAt(3);
+        document.write(y + "<br><br>")
+
+        var y=x.charCodeAt(1);
+        document.write(y + "<br><br>")
+
+        var y=String.fromCharCode(95); 
+        document.write(y + "<br><br>")
+
+        var temp=x.concat(z);
+        document.write(temp + "<br><br>");
+       
+        
+        var y=x.split("");
+        var y=x.repeat(5);
+        document.write(y);
+
+
+    </script>
+</body>
+</html>

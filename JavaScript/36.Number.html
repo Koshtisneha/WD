@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- 
+    1. number()
+    2. parseInt()
+    3. parsFloat()
+    4. isFinite()
+    5. isInteger()
+    6. toFixed(x)
+    7. toprecision(x)    
+-->
+
+    <script>
+
+        var x="500.00";
+        var y=Number(x);
+        // var y=parseInt(x);
+        document.write("<b>parseInt : </b>" + y);
+        document.write("<br><br>")
+
+        var a=2.25;
+        var b=parseFloat(a);
+        document.write("<b>parseFloat : </b>" + b);
+        document.write("<br><br>")
+
+        var x=1000;
+        var y=Number.isFinite(x);
+        document.write("<b>isFinite : </b>" + y);
+        document.write("<br><br>")
+
+        var x=223;
+        var y=Number.isInteger(x);
+        document.write("<b>isInteger : </b>" + y);
+        document.write("<br><br>")
+
+        var x=18.25;
+        var y=x.toFixed(2);
+        document.write("<b>toFixed : </b>" + y);
+        document.write("<br><br>")
+
+        var x=30.53;
+        var y=x.toPrecision(2);
+        document.write("<b>toPrecision : </b>" + y);
+
+    </script>
+
+
+
+</body>
+</html>
