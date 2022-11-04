@@ -1,0 +1,481 @@
+		*
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+		.navi
+		{
+			height: 60px;
+			background-color: white;
+			width: 1002px;
+		}
+		li
+		{
+			list-style: none;
+			display: inline-flex;
+			line-height: 60px;
+		}
+		.drop
+		{
+			position: relative;
+			left: 450px;
+		}
+		.drop1
+		{
+			position: relative;
+			left: 470px;
+		}
+		.drop2
+		{
+			position: relative;
+			left: 480px;
+		}
+		.drop3
+		{
+			position: relative;
+			left: 500px;
+		}
+		.navi a
+		{
+			text-decoration: none;
+			color: black;
+			margin: 2px;
+		}
+		.nav a:hover
+		{
+			text-decoration: underline 2px;
+
+		}
+		.navi .micro
+		{
+			color: darkgray;
+			font-size: 20px;
+			position: relative;
+			left: 80px;
+		}
+		.navi .micro:hover
+		{
+			text-decoration: none;
+		}
+		.logo
+		{
+			position: absolute;
+			top: 20px;
+			left: 50px;
+		}
+		.nav
+		{
+			position: relative;
+			right: 5px;
+		}
+		.na
+		{
+			position: absolute;
+			top: 2px;
+			left: 170px;
+		}
+		section
+		{
+			height: 500px;
+			width: 1285px;
+			background-color: darkgray;	
+		}
+		
+		.i1
+		{
+			display: inline-flex;
+		}
+		.img 
+		{
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			right: 70px;
+			top: 50px;
+		}
+		.img1
+		{
+			position: relative;
+			left: 400px;
+		}
+		.img2
+		{
+			position: relative;
+			left: 550px;
+		}
+		.img3
+		{
+			position: relative;
+			left: 650px;
+			bottom: 15px;
+		}
+		.img4
+		{
+			position: relative;
+			left: 750px;
+		}
+		.imgtext a
+		{
+			text-decoration: none;
+			text-decoration: underline;
+			font-size: 18px;
+			position: relative;
+			top: 50px;
+		}
+		.it1
+		{
+			position: relative;
+			left: 250px;
+		}
+		.it2
+		{
+			position: relative;
+			left: 290px;
+		}
+		.it3
+		{
+			position: relative;
+			left: 320px;
+		}
+		.it4
+		{
+			position: relative;
+			left: 360px;
+		}
+		.sec12
+		{
+			display: inline-flex;
+			padding: 45px;
+			padding-top: 150px;
+			width: 902px;			
+		}
+		.sec12 .sec1
+		{
+			padding-right: 30px;
+		}
+		.sec12 .t1
+		{
+			color: black;
+			text-decoration: none;
+			font-size: 25px;
+			font-family: sans-serif;
+			position: relative;
+			top: 10px;
+		}
+		.sec12 .p1 a
+		{
+			text-decoration: none;
+			font-size: 17px;
+			color: black;
+			position: relative;
+			top: 20px;
+
+		}
+		.sec12 .a1
+		{
+			text-decoration: none;
+			font-size: 18px;
+			position: relative;
+			top: 30px;
+		}
+		.sec12 .a1:hover
+		{
+			text-decoration: underline;
+		}
+		.box
+		{
+			width: 400px;
+			background-color: white;
+			position: absolute;
+			bottom: 50px;
+			top: 50px;
+			left: 100px;
+		}
+		.s1
+		{
+			position: relative;
+			top: 40px;
+			padding-left: 50px;
+		}
+		.text3
+		{
+			padding: 30px;
+		}
+		.text3 a
+		{
+			text-decoration: none;
+			color: black;
+		}
+		.text3 .b1
+		{
+			font-size: 30px;
+		}
+		.text3 .b2
+		{
+			font-size: 25px;
+		}
+		button
+		{
+			background-color: blue;
+			border-color: blue;
+			color: white;
+			height: 30px;
+			width: 150px;
+		}
+		
+		.aside
+		{
+			display: inline-flex;
+			padding-left: 40px;
+			width: 1000px;
+		}
+		.aside img
+		{
+			padding: 20px;
+		}
+		.aside .a1
+		{
+			text-decoration: none;
+			color: black;
+			font-size: 25px;
+			font-family: sans-serif;
+			padding-left: 20px;
+		}
+		.aside p a
+		{
+			text-decoration: none;
+			color: black;
+			font-family: 15px;
+			padding-left: 20px;
+			padding-top: 20px;
+		}
+		.aside .l1
+		{
+			text-decoration: none;
+			padding-left: 20px;
+			padding-top: 100px;
+		}
+		.aside .l1:hover
+		{
+			text-decoration: underline;
+		}
+		.new
+		{
+			background-color: yellow;
+			height: 30px;
+			width: 60px;
+			font-size: 30px;
+			/*padding-left: 20px;*/
+		}
+		.new2
+		{
+			padding-left: 20px;
+		}
+		.for
+		{
+			padding-left: 60px;
+			padding-top: 150px;
+		}
+
+
+		.follow
+		{
+			display: inline-flex;
+			position: relative;
+			width: 1100px;
+		}
+		.follow p
+		{
+			position: relative;
+			top: 60px;
+			left: 60px;
+			font-size: 20px;
+		}
+		.follow	i
+		{
+			position: relative;
+			left: 100px;
+			top: 55px;
+			padding-right: 20px;
+		}
+		.follow a
+		{
+			color: black;
+		}
+		.back
+		{
+			position: relative;
+			top: 100px;
+			left: 30px;
+			width: 1250px;
+		}
+		.back1
+		{
+			font-size: 20px;
+			height: 40px;
+			width: 150px;
+			float: right;
+			position: relative;
+			right: 40px;
+			background-color: darkgray;
+			color: black;
+			border-color: darkgray;
+		}
+		.back1:hover
+		{
+			background-color: white;
+			border-color: white;
+		}
+		.footer
+		{
+			background-color: #ECECEC;
+			height: 400px;
+			width: 1202px;
+			padding: 40px;
+			position: relative;
+			top: 200px;
+			display: inline-flex;
+		}
+		.footer a
+		{
+			text-decoration: none;
+			color: #808080;
+			font-size: 15px;
+		}
+		.footer1 a
+		{
+			display: inline-flex;
+			padding: 10px;
+			position: relative;
+			right: 20px;
+			left: 10px;
+		}
+		.footer2 a
+		{
+			display: inline-flex;
+			padding: 10px;
+			position: relative;
+			left: 20px;
+		}
+		.footer3 a
+		{
+			display: inline-flex;
+			padding: 10px;
+			position: relative;
+			left: 40px;
+		}
+		.footer4 a
+		{
+			display: inline-flex;
+			padding: 10px;
+			position: relative;
+			left: 50px;
+		}
+		.footer5 a
+		{
+			display: inline-flex;
+			padding: 10px;
+			position: relative;
+			left: 60px;
+		}
+		.footer6 a
+		{
+			display: inline-flex;
+			padding: 10px;
+			position: relative;
+			left: 80px;
+		}
+		.f1
+		{
+			font-size: 18px;
+		}
+		.footer a:hover
+		{
+			text-decoration: underline;
+			color: black;
+		}
+		.footer h3
+		{
+			color: #696969;
+		}
+		.footer1 h3
+		{
+			position: relative;
+			right: 10px;
+			left: 15px;
+		}
+		.footer2 h3
+		{
+			position: relative;
+			left: 30px;
+		}
+		.footer3 h3
+		{
+			position: relative;
+			left: 50px;
+		}
+		.footer4 h3
+		{
+			position: relative;
+			left: 60px;
+		}
+		.footer5 h3
+		{
+			position: relative;
+			left: 70px;
+		}
+		.footer6 h3
+		{
+			position: relative;
+			left: 90px;
+		}
+		.eng p
+		{
+			position: relative;
+			top: 330px;
+			right: 980px;
+			
+		}
+		.foot a
+		{
+			position: absolute;
+			top: 450px;
+			font-size: 12px;
+		}
+
+		.foot1
+		{
+			position: relative;
+			left: 700px;
+		}
+		.foot2
+		{
+			position: relative;
+			left: 820px;
+		}
+		.foot3
+		{
+			position: relative;
+			left: 870px;
+		}
+		.foot4
+		{
+			position: relative;
+			left: 950px;
+		}
+		.foot5
+		{
+			position: relative;
+			left: 1020px;
+		}
+		.foot6
+		{
+			position: relative;
+			left: 1100px;
+		}
+
+
+
+   
+
+   		
