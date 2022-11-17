@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form
+        {
+            background-color: darkblue;
+            width: 500px;
+            color: white;
+            padding: 20px;
+        }
+        
+    </style>
+
+    
+</head>
+
+<script>
+        
+    function validate() 
+    {   
+        //Frist Name
+        var fn=document.forms["form"]["fn"].value;  
+        if(fn=="" || fn==null)
+        {
+            alert('Please Enter Your First Name');
+            return false;
+        }
+                       
+        //Last Name
+        var ln=document.forms["form"]["ln"].value;  
+        if(ln=="" || ln==null)
+        {
+            document.getElementById('ln').innerHTML="Please Enter Your Last Name...!";
+            return false;
+        }
+        else
+        {
+            document.getElementById('ln').innerHTML="";
+        }
+        
+        //Password
+        var pass=document.forms["form"]["pass"].value;  
+        if(pass=="" || pass==null)
+        {
+            alert('Please Enter Your Password');
+            return false;
+        }
+        
+        if(!(pass.length >=3  && pass.length <= 8))
+        { 
+            alert('Please,provide min 3 & max 8 char in pass');
+            return false;
+        }
+        
+        var cpass=document.forms["form"]["cpass"].value;  
+        if(cpass=="" || cpass==null)
+        {
+            alert('Please Enter Your Confim Password'); 
+            return false; 
+        }
+        //same password
+        if(pass==cpass)
+        {
+        }
+        else
+        {
+            alert('Please Enter Same values'); 
+            return false; 
+        }
+        
+        //email
+        var email=document.forms["form"]["email"].value;  
+        if(email=="" || email==null)
+        {
+            document.getElementById('email').innerHTML="Please Enter Your Email...!";
+            return false;   
+        }
+        else
+        {
+            document.getElementById('ln').innerHTML="";
+        }
+        
+        var mail=/^[a-zA-Z0-9_]+@[a-zA-Z]+\.[a-zA-Z]{2,4}$/;
+        if(!mail.test(email))
+        {
+            alert('Please Enter Proper Email Id');
+            return false;   
+        }
+        
+        
+        //Phone Number 
+        var pno=document.forms["form"]["pno"].value;  
+        if(pno=="" || pno==null) 
+        {
+            alert('Please Enter Your Phone Number'); 
+            return false;  
+        }
+        
+        var phone=/^[0-9]{10,11}$/;
+        if(!phone.test(pno))
+        {
+            alert('Please Enter only digits in Phone Number'); 
+            return false;
+        }
+        
+        //Gender
+        var gen_arr = document.getElementsByName("gender");
+        if (gen_arr[0].checked == true) 
+        {
+                       
+        } 
+        else if (gen_arr[1].checked == true) 
+        {
+                      
+        } 
+        else 
+        {
+            alert('! Please Select Gender'); 
+            return false;
+        }
+        
+        
+        var chk_arr = document.getElementsByName("chk");
+        if (chk_arr[0].checked == true) 
+        {
+                       
+        } 
+        else if (chk_arr[1].checked == true) 
+        {
+                      
+        } 
+        else if (chk_arr[2].checked == true) 
+        {
+                      
+        } 
+        else if (chk_arr[3].checked == true) 
+        {
+                      
+        }
+        else 
+        {
+            alert('! Please Select any one Hobby ');  // alert msg
+            return false;
+        }
+        
+        
+    }
+</script>
+
+
+
+
+
+
+<body>
+    <form name="form" action="" method="post" onsubmit="return validate()">
+        <table>
+           <h1>Registration :-</h1>
+            <tr>
+                <th>First Name :-</th>
+                <td><input type="text" name="fn" ></td>
+            </tr>
+
+            <tr>
+                <th>Last Name :-</th>
+                <td>
+                    <input type="text" name="ln" >
+                    <span style="color:red" id="ln"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Password :-</th>
+                <td><input type="password" name="pass" ></td>
+            </tr>
+          <tr>
+                <th>Confirm Password :-</th>
+                <td><input type="password" name="cpass" ></td>
+            </tr>
+            <tr>
+                <th>Email :-</th>
+                <td><input type="text" name="email" >
+                    <span style="color:red" id="email"></span>
+                </td>
+                
+            </tr>
+            <tr>
+                <th>Phone No:-</th>
+                <td><input type="text" name="pno" ></td>
+            </tr>
+            <tr>
+                <th>Gender :-</th>
+                <td> 
+                <input type="radio"  name="gender" value="m">Male <br>
+                <input type="radio" name="gender" value="f">Female <br><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Hobby :-</th>
+                <td> 
+                <input type="checkbox"  name="chk" value="Reading">Readimg <br>
+                <input type="checkbox"  name="chk" value="music">Music <br>
+                <input type="checkbox"  name="chk" value="outing">Outing <br>
+                <input type="checkbox"  name="chk" value="Playing Games">Palying Games <br>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><input type="submit" name="submit"/></td>
+                
+            </tr>
+                 
+            
+        </table>
+            
+    </form>
+</body>
+</html>

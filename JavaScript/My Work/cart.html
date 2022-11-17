@@ -1,1 +1,33 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function plus ()
+        {
+            var a=document.getElementById('plus').innerHTML;
+            a++;
+            document.getElementById('plus').innerHTML=a;
+        }
+        
+        function minus ()
+        {
+            var b=document.getElementById('plus').innerHTML;
+            b--;
+            if(b>=0)
+            {
+                document.getElementById('plus').innerHTML=b; 
+            }
+           
+        }
+    </script>
+    <input type="submit" name="submit" value="+" onclick="plus()">
+    <span id="plus">1</span>
+    <input type="submit" name="submit" value="-" onclick="minus()">
+</body>
+</html>

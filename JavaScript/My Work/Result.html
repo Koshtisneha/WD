@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div style="text-align:center">
+        <div style="background-color: darkcyan; height: 100px; color: white;">
+        <h1>Enter your Code</h1>
+        <input type="text" id="code" onkeyup="text()" placeholder="Enter Your Code">
+        </div>
+       
+        <div style="background-color: darkmagenta; color: white;">
+        <h1>Enter your Marks</h1>
+        <form onsubmit="return result()">
+            Gujarati : <input type="number" id="hindi" required><br><br>
+            Hingi : <input type="number" id="gujarati" required><br><br>
+            English : <input type="number" id="english" required><br><br>
+            Science : <input type="number" id="science" required><br><br>
+            Maths : <input type="number" id="maths" required><br><br>
+            <input type="submit" id=""><br><br>
+        </form>	
+        <h1 id="result"></h1>
+        </div>
+    </div>
+    
+    <script>
+    
+        function text()
+        {
+            document.getElementById("code").style.textTransform="uppercase";
+        }
+        
+        function result()
+        {
+            var gujarati=document.getElementById("gujarati").value;
+            var hindi=document.getElementById("hindi").value;
+            var english=document.getElementById("english").value;
+            var science=document.getElementById("science").value;
+            var maths=document.getElementById("maths").value;
+            
+            var total=+gujarati + +hindi + +english + +science + +maths;
+            var perc=(total*100)/500;
+            if(perc<=40)
+            {
+                document.getElementById("result").innerHTML="Your Total is " + total + " and Your per % is " + perc + "  <p> Faiil</p>";
+                document.getElementById("result").style.color="red";
+                return false;
+            }
+            else if(perc>40 && perc<=60)
+            {
+                document.getElementById("result").innerHTML="Your Total is " + total + " and Your per % is " + perc + " <p>Grade : c</p> ";
+                document.getElementById("result").style.color="cyan";
+                return false;
+            }
+            else if(perc>60 && perc<=70)
+            {
+                document.getElementById("result").innerHTML="Your Total is " + total + " and Your per % is " + perc + " <p>Grade : B</p>";
+                document.getElementById("result").style.color="yellow";
+                return false;
+            }
+            else
+            {
+                document.getElementById("result").innerHTML="Your Total is " + total + " and Your per % is " + perc + "<p> Grade : A</p>";
+                document.getElementById("result").style.color="pink";
+                return false;
+            }
+        }
+    </script>
+    <!-- <script>
+	
+        function result()  
+        {
+            var gujarati=document.getElementById('gujarati').value;
+            var hindi=document.getElementById('hindi').value;
+            var english=document.getElementById('english').value;
+            var science=document.getElementById('science').value;
+            var maths=document.getElementById('maths').value;
+            var total;
+            total=+gujarati + +hindi + +english + +science + +maths;
+            document.getElementById('total').innerHTML="Your Total is : "  + total;
+            document.getElementById('total').style.color="darkcyan";
+            document.getElementById('total').style.fontSize="30px";
+            
+            
+            var per;
+            per=(total/500)*100;
+            document.getElementById('per').innerHTML="Your Per % is : " + per;
+            document.getElementById('per').style.color="darkcyan";
+            document.getElementById('per').style.fontSize="30px";
+            
+            if(per>=90)
+            {
+            document.getElementById('grade').innerHTML="Grade : A PASS";
+            document.getElementById('grade').style.color="blue";
+            document.getElementById('grade').style.fontSize="30px";
+            }
+            else if(per>=70)
+            {
+            document.getElementById('grade').innerHTML="Grade : B";
+            document.getElementById('grade').style.color="darkcyan";
+            document.getElementById('grade').style.fontSize="30px";
+            }
+            else if(per>=50)
+            {
+            document.getElementById('grade').innerHTML="Grade : C";
+            document.getElementById('grade').style.color="darkcyan";
+            document.getElementById('grade').style.fontSize="30px";
+            }
+            else if(per>=40)
+            {
+            document.getElementById('grade').innerHTML="Grade : D";
+            document.getElementById('grade').style.color="darkcyan";
+            document.getElementById('grade').style.fontSize="30px";
+            }
+            else
+            {
+            document.getElementById('grade').innerHTML="Fail";
+            document.getElementById('grade').style.color="red";
+            document.getElementById('grade').style.fontSize="30px";
+            }
+        }
+        
+    </script>
+<div>
+<center style="background-color: darkcyan; height: 80px; color: white;">
+    <h2>Enter Your Code</h2><input type="text" name="" id="" placeholder="Enter Your Code">
+</center>
+
+<center>
+    <div style="background-color: darkmagenta; color: white; height: 400px;">
+        <h2>Result</h2>
+        <form action="#">
+            <div>
+                <label for="">Gujarati :</label>
+                <input type="number"id="gujarati" placeholder="Enter Gujarati Marks" name="Guajarati" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Hindi :</label>
+                <input type="number"id="hindi" placeholder="Enter Hindi Marks" name="Hindi" required>
+            </div>
+            <br>
+            <div>
+                <label for="">English :</label>
+                <input type="number"id="english" placeholder="Enter English Marks" name="English" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Science :</label>
+                <input type="number"id="science" placeholder="Enter Science Marks" name="Science" required>
+            </div>
+            <br>
+            <div>
+                <label for="">Maths :</label>
+                <input type="number"id="maths" placeholder="Enter Maths Marks" name="Maths" required>
+            </div>
+            <br><br>
+            <button type="submit" onclick="result()" style="background-color: white; border-color: white; color: blue;">Submit</button>
+        </form>
+        <br><br>
+        <span id="total"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span id="per"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span id="grade"></span>
+    </div>
+</center>
+</div> -->
+
+
+
+    
+</body>
+</html>

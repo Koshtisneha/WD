@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="submit" name="submit" value="Previous" onclick="previous()">
+    <img src="https://i.pinimg.com/474x/21/03/17/210317c0e6eaed79ab8f7b056f3ac7a4.jpg" alt="" height="200px" width="200px" id="myimg">
+    <input type="submit" name="submit" id="" value="Next" onclick="next()">
+
+    <script>
+        function next()
+        {
+            var img=document.getElementById("myimg");
+            img.src="https://i0.wp.com/cooldigital.photography/wp-content/uploads/2014/02/White-flower-with-green-leaf-and-red-cherries-in-bloom-in-Spring-San-Sebastia%CC%81n.jpg?resize=620%2C413&ssl=1";
+        }
+        function previous()
+        {
+            var img=document.getElementById("myimg");
+            img.src="https://shayarifarm.com/wp-content/uploads/2022/09/Flowers-dp9.jpg";
+        }
+    </script>    
+</body>
+</html>
