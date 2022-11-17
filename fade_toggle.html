@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- fadeOut
+    fadeIn
+    fadeToggle -->
+
+    <script>
+        $(document).ready(function(){
+            $("#out").click(function(){
+                $("#box").fadeOut(2000)
+            })
+            $("#in").click(function(){
+                $("#box").fadeIn(2000)
+            })
+
+            $("#toggle").click(function(){
+                $("#box1").fadeToggle(5000)
+            })
+        })
+    </script>
+
+    <div id="box" style="height: 100px; width: 100px; background-color: darkcyan; "></div><br>
+    <button id="out">Fade Out</button>
+    <button id="in">Fade In</button>
+    <br><br><br>
+    <div id="box1" style="height: 150px; width: 150px; background-color: purple; "></div><br>
+    <button id="toggle">Fade Toggel</button>
+
+
+</body>
+</html>
