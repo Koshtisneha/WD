@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="jquery-3.6.1.min.map.js"></script>Download file -->
+    
+    <!--CDN file-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <script> jQuery Code mate
+        $(document).ready(function(){
+        
+          // jQuery methods go here...
+        
+        });
+        </script> -->
+
+        <!-- *Four Types Of Apply jQuery :-
+        1. $(this).hide() - hides the current element.
+
+        2. $("p").hide() - hides all <p> elements.
+        
+        3. $(".test").hide() - hides all elements with class="test".
+        
+        4. $("#test").hide() - hides the element with id="test". -->
+
+
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $(this).hide()
+                })
+
+                $("#btn2").click(function(){
+                    $("p").hide(5000)
+                })
+
+                $("#btn3").click(function(){
+                    $(".mydiv").hide(2000)
+                })
+
+                $(document).click(function(){
+                    $("#myid").hide()
+                })
+            })
+        </script>
+
+        <!--This (Current element)-->
+        <button id="btn1">current element hide</button>
+        <br><br>
+        <!--element hide-->
+        <p>Hello ! Everyone....! </p>
+        <p>Hello ! Everyone....! </p>
+        <p>Hello ! Everyone....! </p>
+        <p>Hello ! Everyone....! </p>
+        <p>Hello ! Everyone....! </p>
+        <p>Hello ! Everyone....! </p>
+        <p>Hello ! Everyone....! </p>
+        <button id="btn2">element hide</button>
+        <br><br>
+        <!--Class-->
+        <div class="mydiv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dicta aliquam deserunt officia enim harum laudantium assumenda, cumque, necessitatibus, quis earum! Repellat dolor tempora animi exercitationem laborum nemo, dolorum quis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore reiciendis repellendus sequi tempora deserunt molestiae est labore quam? Veniam id laborum amet quia dolorum asperiores sed placeat soluta a nesciunt.</div>
+        <button id="btn3">class hide</button>
+        <br><br>
+        <!--ID-->
+        <div id="myid">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam aperiam odit aut? Sed esse tempora voluptatum optio illo, distinctio maxime impedit similique doloremque autem corporis. Quae culpa dolorem inventore ducimus.</div>
+        <button id="btn4">ID hide</button>
+    
+</body>
+</html>
